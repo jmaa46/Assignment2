@@ -1,0 +1,42 @@
+CodeBook for the Second Assignment.
+04:22 p.m. 16/06/2014
+First Problem.
+
+1. I read the files in my working area. I unzipped the two files and left them in the working area.
+2. I read them with the readRDS funtion and put them in the mainframes NEI and SCC.
+3. I assign The column "year" as factor.
+4. I apply a  tapply with summary as function and year as factor on NEI mainframe. It showed there are 75 % of the Emissions with a value inferior to .26 in 1999, and inferior to .1 in the other years. Also, 25% of the observatios are near to zero. We can observe that the mean and de median are descending in each period. 5.  I proceed to eliminate the observations equals to zero and the observations greater thar 0.26
+6. I used a boxplot funcion with year as a factor.
+7. I copied the boxplot in the working folder.
+8. I used a tapply function on the data.frame to calculate the summary of each year. We see that the mean and median descend in 2002 and 2005 but ascend lightly in 2008.
+
+Second Problem.
+1. The first and second activities of the first problem were made. 
+2. I proceed to extract the observatios for (flips == "24510").
+3. I assign the the column "year" as a factor. 
+4. I apply a tapply with summary as function and year as factor on NNEI mainframe. 
+5. I decided to eliminate the observations larger than 2.07
+6. I used a boxplot function with year as a factor.
+7. I copied the boxplot in the working folder.
+8. I used a tapply function on the data.frame to calculate the summary of each year. We observe that the mean and median descend in 2002 and 2005 and ascend lightly in 2008. However, the third quartile is lesser than the mean, then there are less dispersion.
+
+Third Problem.
+1. The first five activities of the second problem were made.
+2. I used the ggplot2 system plotting the Emissions by year and by type. We can see that the ON-ROAD type has the best tendency. As we see in the summary the mean descende from .3795 to .1879. 
+
+Fourth Problem.
+1. I realized the first three steps of the first problem.
+2. I used the file SCC to look for the "SCC" classification related with coal combustion. I convert the SCC column from factor to integral. And I saw that the classification lesser than 10300000 are related with coal combustion. 
+3. I conformed a subset with values lesser than 10300000.
+4. I used a boxplot to obtain the view among the four years.
+
+Fifth Problem.
+1. I did the first three steps of the first problem.
+2. I used the "type" column to subset the file with the type = "ON-ROAD".
+3. I created a boxplot with the year column as a factor.
+
+Sixth problem.
+1. The same steps of the previous problem, with the selection of variables from Baltimore City and Los Angeles County.
+2. With that subset I created a xyplot with the lattice package.
+2. 
+ 
